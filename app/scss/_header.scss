@@ -21,7 +21,22 @@
       background-color: $darkBlue;
 
       &:not(:last-child) {
-        margin-bottom: 3px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &.open {
+
+      >span:first-child {
+        transform: rotate(45deg);
+      }
+
+      >span:nth-child(2) {
+        opacity: 0;
+      }
+
+      >span:last-child {
+        transform: rotate(-45deg);
       }
     }
   }
@@ -52,7 +67,7 @@
 
       &:hover {
         color: $darkBlue;
-        
+
         &::before {
           opacity: 1;
         }
