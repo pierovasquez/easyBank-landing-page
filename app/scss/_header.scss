@@ -2,7 +2,7 @@
 
   // Hamburger Open Styles 
   &.open {
-    .header__menu {
+    .header__toggle {
       >span:first-child {
         transform: rotate(45deg);
       }
@@ -28,7 +28,8 @@
   }
 
   nav {
-    padding: 1.0625rem 1.5rem;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
   }
 
   &__logo {
@@ -38,9 +39,9 @@
     }
   }
 
-  &__menu {
+  &__toggle {
 
-    // Mobile Menu
+    // Mobile Menu Toggle
     >span {
       display: block;
       width: 26px;
@@ -96,6 +97,21 @@
 
     &:hover {
       opacity: 0.75;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    background: $white;
+    padding: 1.625rem;
+    margin: 0px 1.5rem;
+    border-radius: 3px;
+
+    a {
+      display: block;
+      padding: 0.625rem;
+      color: $darkBlue;
+      text-align: center;
     }
   }
 }
