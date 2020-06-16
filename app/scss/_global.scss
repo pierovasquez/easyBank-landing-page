@@ -19,6 +19,10 @@ body {
   // Adds space between lines
   line-height: 1.3;
   font-weight: 300;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 a, a:visited, a:hover {
