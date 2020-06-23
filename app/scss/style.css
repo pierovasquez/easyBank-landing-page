@@ -73,6 +73,7 @@
 }
 
 html {
+  background-color: #f3f4f6;
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -93,6 +94,12 @@ body {
   font-size: 1.125rem;
   line-height: 1.3;
   font-weight: 300;
+}
+
+@media (min-width: 64em) {
+  body {
+    font-size: 1.125rem;
+  }
 }
 
 body.noscroll {
@@ -206,6 +213,10 @@ button:hover,
   }
 }
 
+.header {
+  background-color: white;
+}
+
 .header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -233,7 +244,6 @@ button:hover,
 
 .header nav {
   position: relative;
-  background-color: white;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }
@@ -313,10 +323,13 @@ button:hover,
 }
 
 @media (min-width: 64em) {
-  .hero {
+  .hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -329,15 +342,11 @@ button:hover,
   min-height: 17.5rem;
 }
 
-.hero__image::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: url("/images/image-mockups.png");
-  background-size: 93%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 60%;
+  }
 }
 
 @media (min-width: 64em) {
@@ -349,8 +358,48 @@ button:hover,
         -ms-flex-order: 2;
             order: 2;
     min-height: 41rem;
+    background-image: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image::before {
+    content: "";
+    height: 100%;
+    position: absolute;
     background-image: url("/images/bg-intro-desktop.svg");
-    background-position: left center;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 150%;
+    background-size: 122%;
+    background-position: 0% 83%;
+  }
+}
+
+.hero__image::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("/images/image-mockups.png");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image::after {
+    width: 120%;
+    height: 122%;
+    background-size: 94%;
+    background-position: center 150%;
+    left: 22%;
   }
 }
 
@@ -363,6 +412,7 @@ button:hover,
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
+    text-align: left;
   }
 }
 
@@ -372,6 +422,12 @@ button:hover,
   line-height: 1.15;
   color: #2d314d;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 3.25rem;
+  }
 }
 
 .hero__text p {
