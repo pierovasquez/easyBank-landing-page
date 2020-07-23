@@ -10,6 +10,10 @@ This is a landing page done with the given desing by www.frontendmentor.io. I us
 
 I also used BEM which is a naming convention for classes.
 
+## Live Preview
+
+https://pierovasquez.github.io/easyBank-landing-page/
+
 ## Screenshot
 
 <img src="images/screenshot.jpg">
