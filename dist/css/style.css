@@ -627,11 +627,11 @@ button:hover::before,
 }
 
 .article__image__currency {
-  background-image: url("images/image-currency.jpg");
+  background-image: url("/images/image-currency.jpg");
 }
 
 .article__image__restaurant {
-  background-image: url("images/image-restaurant.jpg");
+  background-image: url("/images/image-restaurant.jpg");
 }
 
 .article__image__plane {
