@@ -9,3 +9,7 @@ This is a landing page done with the given desing by www.frontendmentor.io. I us
 - Javascript
 
 I also used BEM which is a naming convention for classes.
+
+## Screenshot
+
+<img src="images/screenshot.jpg">
