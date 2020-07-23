@@ -339,7 +339,7 @@ button:hover::before,
 
 .hero__image {
   position: relative;
-  background-image: url("/images/bg-intro-mobile.svg");
+  background-image: url("../images/bg-intro-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -367,7 +367,7 @@ button:hover::before,
     content: "";
     height: 100%;
     position: absolute;
-    background-image: url("/images/bg-intro-desktop.svg");
+    background-image: url("../images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
     width: 150%;
@@ -381,7 +381,7 @@ button:hover::before,
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url("/images/image-mockups.png");
+  background-image: url("../images/image-mockups.png");
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -547,19 +547,19 @@ button:hover::before,
 }
 
 .article__image__currency {
-  background-image: url("/images/image-currency.jpg");
+  background-image: url("../images/image-currency.jpg");
 }
 
 .article__image__restaurant {
-  background-image: url("/images/image-restaurant.jpg");
+  background-image: url("../images/image-restaurant.jpg");
 }
 
 .article__image__plane {
-  background-image: url("/images/image-plane.jpg");
+  background-image: url("../images/image-plane.jpg");
 }
 
 .article__image__confetti {
-  background-image: url("/images/image-confetti.jpg");
+  background-image: url("../images/image-confetti.jpg");
 }
 
 .article__text {
@@ -601,8 +601,7 @@ button:hover::before,
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 3fr;
     grid-template-rows: 1fr auto;
-    grid-template-areas: "logo links1 links2 cta"
- "social links1 links2 copyright";
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     gap: 1rem;
     justify-items: start;
   }
