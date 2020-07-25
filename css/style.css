@@ -362,6 +362,15 @@ button:hover::before,
   }
 }
 
+@media (min-width: 100em) {
+  .hero__image {
+    flex: 3;
+    order: 2;
+    min-height: 50rem;
+    background-image: none;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__image::before {
     content: "";
@@ -373,6 +382,20 @@ button:hover::before,
     width: 150%;
     background-size: 122%;
     background-position: 0% 83%;
+  }
+}
+
+@media (min-width: 100em) {
+  .hero__image::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 180%;
+    background-size: 119%;
+    background-position: 0% 87%;
   }
 }
 
@@ -400,6 +423,16 @@ button:hover::before,
     background-size: 94%;
     background-position: center 150%;
     left: 22%;
+  }
+}
+
+@media (min-width: 100em) {
+  .hero__image::after {
+    width: 150%;
+    height: 116%;
+    background-size: 94%;
+    background-position: center 104%;
+    left: 26%;
   }
 }
 
